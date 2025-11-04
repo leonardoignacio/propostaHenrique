@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultoria: Do Low-Code ao Código Profissional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Pequenas customizações */
+    :root{--accent:theme(colors.indigo.500)}
+    .smooth-scroll { scroll-behavior: smooth; }
+    .sidebar-scroll { max-height: calc(100vh - 4rem); overflow:auto; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+  <div class="min-h-screen flex">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-80 bg-white border-r border-slate-200 p-4 hidden md:block">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">CI</div>
+        <div>
+          <h1 class="text-lg font-semibold">Consultoria Arquitetura</h1>
+          <p class="text-sm text-slate-500">Do protótipo ao código profissional</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-scroll" aria-label="menu">
+        <!-- Accordion groups -->
+        <div class="space-y-3">
+          <!-- Group 1 -->
+          <div class="border border-slate-100 rounded-lg overflow-hidden bg-gradient-to-b from-white to-slate-50">
+            <button class="w-full text-left px-4 py-3 flex items-center justify-between hover:bg-slate-50 group accordion-toggle">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3H6a1 1 0 100 2h3v3a1 1 0 102 0v-3h3a1 1 0 100-2h-3V7z" clip-rule="evenodd"/></svg>
+                <span class="font-medium">Introdução</span>
+              </div>
+              <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
+            </button>
+            <div class="px-4 pb-3 accordion-panel hidden">
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li><a href="#slide-1" class="block py-1 hover:text-indigo-600 smooth-link">Do protótipo ao código profissional</a></li>
+                <li><a href="#slide-2" class="block py-1 hover:text-indigo-600 smooth-link">Objetivo da consultoria</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Group 2 -->
+          <div class="border border-slate-100 rounded-lg overflow-hidden bg-gradient-to-b from-white to-slate-50">
+            <button class="w-full text-left px-4 py-3 flex items-center justify-between hover:bg-slate-50 group accordion-toggle">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor"><path d="M4 3a1 1 0 000 2h12a1 1 0 100-2H4z"/></svg>
+                <span class="font-medium">Conceitos</span>
+              </div>
+              <span class="text-slate-400">▾</span>
+            </button>
+            <div class="px-4 pb-3 accordion-panel hidden">
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li><a href="#slide-3" class="block py-1 hover:text-emerald-700 smooth-link">O que é Arquitetura de Software</a></li>
+                <li><a href="#slide-4" class="block py-1 hover:text-emerald-700 smooth-link">Soluções low-code vs Full-Code</a></li>
+                <li><a href="#slide-5" class="block py-1 hover:text-emerald-700 smooth-link">Conceitos-chave</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Group 3 -->
+          <div class="border border-slate-100 rounded-lg overflow-hidden bg-gradient-to-b from-white to-slate-50">
+            <button class="w-full text-left px-4 py-3 flex items-center justify-between hover:bg-slate-50 group accordion-toggle">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h3.5a1 1 0 010 2H4v11h12V5h-3.5a1 1 0 110-2H16a2 2 0 012 2v12a1 1 0 01-1 1H3a1 1 0 01-1-1V5z"/></svg>
+                <span class="font-medium">Arquitetura & Stack</span>
+              </div>
+              <span class="text-slate-400">▾</span>
+            </button>
+            <div class="px-4 pb-3 accordion-panel hidden">
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li><a href="#slide-6" class="block py-1 hover:text-indigo-600 smooth-link">Visão Geral da Arquitetura</a></li>
+                <li><a href="#slide-7" class="block py-1 hover:text-indigo-600 smooth-link">Papel das Tecnologias</a></li>
+                <li><a href="#slide-8" class="block py-1 hover:text-indigo-600 smooth-link">Arquitetura Django</a></li>
+                <li><a href="#slide-9" class="block py-1 hover:text-indigo-600 smooth-link">Front-End Web & Mobile</a></li>
+                <li><a href="#slide-10" class="block py-1 hover:text-indigo-600 smooth-link">Integração Supabase & n8n</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Group 4 -->
+          <div class="border border-slate-100 rounded-lg overflow-hidden bg-gradient-to-b from-white to-slate-50">
+            <button class="w-full text-left px-4 py-3 flex items-center justify-between hover:bg-slate-50 group accordion-toggle">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3H6a1 1 0 100 2h3v3a1 1 0 102 0v-3h3a1 1 0 100-2h-3V7z" clip-rule="evenodd"/></svg>
+                <span class="font-medium">Finalização</span>
+              </div>
+              <span class="text-slate-400">▾</span>
+            </button>
+            <div class="px-4 pb-3 accordion-panel hidden">
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li><a href="#slide-11" class="block py-1 hover:text-rose-600 smooth-link">Benefícios</a></li>
+                <li><a href="#slide-12" class="block py-1 hover:text-rose-600 smooth-link">Próximos Passos</a></li>
+                <li><a href="#slide-13" class="block py-1 hover:text-rose-600 smooth-link">Encerramento</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+    
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 p-6 md:p-10 overflow-auto smooth-scroll">
+      <!-- Mobile top bar -->
+      <div class="md:hidden mb-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <button id="openSidebar" class="p-2 rounded bg-indigo-500 text-white">
+            ☰
+          </button>
+          <div>
+            <h1 class="text-lg font-semibold">Consultoria Arquitetura</h1>
+            <p class="text-sm text-slate-500">Do protótipo ao código profissional</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slides / Sections -->
+      <section id="slide-1" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-2">Do protótipo ao código profissional</h2>
+        <p class="text-slate-600 mb-4">Evoluindo o sistema para uma arquitetura sólida e escalável.</p>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li>Reestruturar o sistema atual</li>
+          <li>Ensinar conceitos de arquitetura</li>
+          <li>Introduzir frameworks profissionais</li>
+          <li>Preparar o sistema para escalar</li>
+        </ul>
+      </section>
+
+      <section id="slide-2" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-2">O que é Arquitetura de Software</h2>
+        <p class="text-slate-600 mb-4">A arquitetura define a estrutura e organização do sistema.</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Importância</h3>
+            <ul class="list-disc pl-5 text-slate-700 mt-2">
+              <li>Organização e clareza</li>
+              <li>Facilidade de manutenção</li>
+              <li>Escalabilidade</li>
+              <li>Segurança</li>
+            </ul>
+          </div>
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Analogia</h3>
+            <p class="text-slate-700">A arquitetura de software é a "planta" de um sistema, definindo seus componentes principais, como eles interagem e as regras que guiam seu desenvolvimento. Ela é crucial porque determina diretamente a qualidade (como desempenho e segurança) e a capacidade do software de evoluir e se adaptar a mudanças futuras de forma eficiente e sustentável.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-3" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-emerald-600 mb-2">Soluções low-code vs Full-Code</h2>
+        <div class="overflow-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr>
+                <th class="p-3 border-b text-sm text-slate-600">Critério</th>
+                <th class="p-3 border-b text-sm text-slate-600">Soluções low-code</th>
+                <th class="p-3 border-b text-sm text-slate-600">Full-Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd:bg-slate-50">
+                <td class="p-3 text-sm">Velocidade inicial</td>
+                <td class="p-3 text-sm">Alta</td>
+                <td class="p-3 text-sm">Média</td>
+              </tr>
+              <tr>
+                <td class="p-3 text-sm">Escalabilidade</td>
+                <td class="p-3 text-sm">Limitada</td>
+                <td class="p-3 text-sm">Alta</td>
+              </tr>
+              <tr class="odd:bg-slate-50">
+                <td class="p-3 text-sm">Personalização</td>
+                <td class="p-3 text-sm">Baixa</td>
+                <td class="p-3 text-sm">Total</td>
+              </tr>
+              <tr>
+                <td class="p-3 text-sm">Custos a longo prazo</td>
+                <td class="p-3 text-sm">Crescentes</td>
+                <td class="p-3 text-sm">Controláveis</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-4 text-slate-700">Soluções low-code são ótimas para protótipos, mas full-code é essencial para crescer.</p>
+      </section>
+
+      <section id="slide-4" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-2">Conceitos-Chave de Arquitetura</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Separação de responsabilidades (SoC)</h3>
+            <p class="text-slate-700 mt-2">Cada parte do sistema tem responsabilidade única: Frontend, Backend e Banco de Dados.</p>
+          </div>
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Padrões</h3>
+            <p class="text-slate-700 mt-2">Modular, Clean Architecture, APIs REST.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-5" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-2">Visão Geral da Nova Arquitetura</h2>
+        <p class="text-slate-600 mb-4">Stack proposta e fluxo simplificado.</p>
+        <div class="bg-gradient-to-r from-indigo-50 to-slate-50 p-6 rounded-lg">
+          <div class="flex flex-col md:flex-row items-center gap-6 justify-between">
+            <div class="text-center">
+              <div class="p-3 rounded bg-white shadow">Frontend</div>
+              <p class="text-sm mt-2">Next.js / React</p>
+            </div>
+            <div class="text-center">
+              <div class="p-3 rounded bg-white shadow">API</div>
+              <p class="text-sm mt-2">Django REST</p>
+            </div>
+            <div class="text-center">
+              <div class="p-3 rounded bg-white shadow">DB</div>
+              <p class="text-sm mt-2">Supabase (Postgres)</p>
+            </div>
+            <div class="text-center">
+              <div class="p-3 rounded bg-white shadow">Automação</div>
+              <p class="text-sm mt-2">n8n</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-6" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Papel de Cada Tecnologia</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Django REST</h3>
+            <p class="text-slate-700 mt-2">API, regras de negócio e segurança.</p>
+          </div>
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Next.js</h3>
+            <p class="text-slate-700 mt-2">Front-end web com SSR e SEO.</p>
+          </div>
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">React Native</h3>
+            <p class="text-slate-700 mt-2">Aplicativo mobile nativo com ecossistema React.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-7" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Arquitetura Django</h2>
+        <pre class="bg-slate-900 text-slate-100 p-4 rounded text-sm overflow-auto">project/
+ ├── core/
+ ├── apps/
+ │   ├── users/
+ │   ├── entries/
+ │   ├── exits/
+ │   └── reports/
+ ├── api/
+ └── utils/</pre>
+        <p class="text-slate-600 mt-3">API RESTful com Django REST Framework, autenticação JWT ou Supabase Auth, regras centralizadas.</p>
+      </section>
+
+      <section id="slide-8" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Front-End Web e Mobile</h2>
+        <pre class="bg-slate-900 text-slate-100 p-4 rounded text-sm overflow-auto">src/
+ ├── app/
+ ├── modules/
+ ├── components/
+ ├── services/
+ ├── store/
+ └── utils/</pre>
+        <p class="text-slate-600 mt-3">Boas práticas: React Query, Zustand/Redux, TypeScript e TailwindCSS. Reutilização de lógica entre web e mobile (monorepo/expo).</p>
+      </section>
+
+      <section id="slide-9" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Integração com Supabase e n8n</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">Supabase</h3>
+            <p class="text-slate-700 mt-2">Persistência, Auth e Storage. Django comunica com Postgres; RLS ativo se frontend acessar diretamente.</p>
+          </div>
+          <div class="p-4 border rounded-lg bg-slate-50">
+            <h3 class="font-semibold">n8n</h3>
+            <p class="text-slate-700 mt-2">Automação via webhooks: exemplo - nova entrada registrada → n8n envia e-mail / notificação.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-10" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-rose-600 mb-2">Fluxo de Dados</h2>
+        <p class="text-slate-600 mb-4">Descrição simplificada do fluxo entre camadas.</p>
+        <div class="flex items-center gap-4">
+          <div class="p-4 rounded bg-white border shadow">Usuário</div>
+          <div class="text-slate-400">→</div>
+          <div class="p-4 rounded bg-white border shadow">Front-End</div>
+          <div class="text-slate-400">→</div>
+          <div class="p-4 rounded bg-white border shadow">Django API</div>
+          <div class="text-slate-400">→</div>
+          <div class="p-4 rounded bg-white border shadow">Supabase</div>
+          <div class="text-slate-400">→</div>
+          <div class="p-4 rounded bg-white border shadow">n8n</div>
+        </div>
+      </section>
+
+      <section id="slide-11" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Benefícios da Nova Arquitetura</h2>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li>Código limpo e modular</li>
+          <li>Escalabilidade real</li>
+          <li>Separação de responsabilidades</li>
+          <li>Deploy automatizado CI/CD</li>
+          <li>Fácil integração e manutenção</li>
+        </ul>
+      </section>
+
+      <section id="slide-12" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-slate-700 mb-2">Próximos Passos</h2>
+        <ol class="list-decimal pl-5 text-slate-700">
+          <li>Apresentação conceitual (esta fase)</li>
+          <li>Desenho técnico detalhado</li>
+          <li>Criação de repositórios base</li>
+          <li>Integração inicial</li>
+          <li>Treinamento e entrega final</li>
+        </ol>
+      </section>
+
+      <section id="slide-13" class="mb-8 bg-white rounded-lg shadow p-6">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-2">Encerramento</h2>
+        <p class="text-slate-700">Soluções low-code foram úteis para chegar até aqui — agora é hora de avançar com código robusto.</p>
+        <p class="text-slate-500 mt-3">Entrarei em contato para agendarmos os próximos passos. Obrigado!</p>
+        <p class="text-xl font-semibold text-green-700 mt-4">Vamos construir juntos o próximo nível desse sistema!</p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Sidebar mobile drawer -->
+  <div id="mobileDrawer" class="fixed inset-0 z-40 hidden">
+    <div class="absolute inset-0 bg-black opacity-30" id="closeDrawerBackdrop"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 bg-white p-4 overflow-auto">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-500 rounded flex items-center justify-center text-white font-bold">CI</div>
+          <div>
+            <h3 class="font-semibold">Menu</h3>
+            <p class="text-xs text-slate-500">Navegação</p>
+          </div>
+        </div>
+        <button id="closeDrawer" class="text-slate-500">✕</button>
+      </div>
+      <!-- clone of nav (simple) -->
+      <nav class="space-y-2">
+        <a href="#slide-1" class="block py-2 text-slate-700 smooth-link">Introdução</a>
+        <a href="#slide-3" class="block py-2 text-slate-700 smooth-link">Soluções low-code vs Full-Code</a>
+        <a href="#slide-5" class="block py-2 text-slate-700 smooth-link">Arquitetura</a>
+        <a href="#slide-11" class="block py-2 text-slate-700 smooth-link">Benefícios</a>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    // Accordion behavior
+    document.querySelectorAll('.accordion-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panel = btn.parentElement.querySelector('.accordion-panel');
+        const isHidden = panel.classList.contains('hidden');
+        // close other panels
+        btn.parentElement.parentElement.querySelectorAll('.accordion-panel').forEach(p => { if (p !== panel) p.classList.add('hidden'); });
+        if (isHidden) panel.classList.remove('hidden'); else panel.classList.add('hidden');
+      });
+    });
+
+    // Smooth links
+    document.querySelectorAll('.smooth-link').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = a.getAttribute('href').substring(1);
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+        // close mobile drawer if open
+        document.getElementById('mobileDrawer').classList.add('hidden');
+      });
+    });
+
+    // Mobile drawer
+    document.getElementById('openSidebar').addEventListener('click', () => {
+      document.getElementById('mobileDrawer').classList.remove('hidden');
+    });
+    document.getElementById('closeDrawer').addEventListener('click', () => {
+      document.getElementById('mobileDrawer').classList.add('hidden');
+    });
+    document.getElementById('closeDrawerBackdrop').addEventListener('click', () => {
+      document.getElementById('mobileDrawer').classList.add('hidden');
+    });
+
+    // highlight active nav on scroll
+    const sections = document.querySelectorAll('main section');
+    const navLinks = document.querySelectorAll('nav a, .accordion-panel a');
+    function onScroll(){
+      const fromTop = window.scrollY + 100;
+      sections.forEach(section => {
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
+          const id = section.id;
+          navLinks.forEach(link => {
+            link.classList.remove('font-semibold');
+            if (link.getAttribute('href') === '#'+id) link.classList.add('font-semibold');
+          });
+        }
+      });
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  </script>
+</body>
+</html>
